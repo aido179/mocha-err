@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "test": "mocha test/**/*.js --reporter myreporter --exit"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "reporter": "file:../reporter"
   }
 }
